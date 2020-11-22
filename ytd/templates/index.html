@@ -16,17 +16,27 @@
         <p class="firstLine"> B &nbsp; M &nbsp; A &nbsp; D &nbsp; E &nbsp; . &nbsp; Youtube &nbsp; Downloader </p>
         <p class="secondLine">The simplest youtube video downloader</p>
         <center>
-          {% with messages = get_flashed_messages() %}
-                 {% if messages %}
-                       {% for message in messages %}
-                            <p style="color:#fff">{{ message }}</p>
-                       {% endfor %}
-                 {% endif %}
-              {% endwith %}
+
         <form class="" action="/download" method="post"  >
-          <p class="pb-5"> <input class="InputStyle form-control" name="yt_url" placeholder="Enter URL of video you want to download " style="font-family:Arial, FontAwesome;" type="text"> </p>
-          <button type="submit" class="btn btn-danger">Download</button>
+          <div class="row">
+            <div class="col-10">
+              <p class="pb-5"> <input class="InputStyle form-control" name="yt_url" placeholder="Enter URL of video you want to download " style="font-family:Arial, FontAwesome;" type="text"> </p>
+            </div>
+            <div class="col-2 p-1 pl-2">
+                <button type="submit" class="btn btn-primary">search</button>
+            </div>
+
+          </div>
+
         </form>
+        {% with messages = get_flashed_messages() %}
+               {% if messages %}
+                     {% for message in messages %}
+                          <p style="color:#fff">{{ message }}</p>
+                          <a class="btn btn-success btn-learn" href="{{ url_for('downloadFile') }}" download="{{ title }}" target="_blank">Download</a>
+                     {% endfor %}
+               {% endif %}
+            {% endwith %}
         </center>
     </div>
     <!--Div for bottom Icons-->
