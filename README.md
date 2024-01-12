@@ -25,8 +25,8 @@ Make sure you have the following installed before running the application:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/youtube-downloader.git
-    cd youtube-downloader
+    git clone https://github.com/mitesh2205/flask-youtube-downloader.git
+    cd flask-youtube-downloader/ytd
     ```
 
 2. Install dependencies:
