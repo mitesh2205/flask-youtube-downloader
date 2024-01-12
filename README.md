@@ -1,6 +1,6 @@
 # YouTube Downloader using Python and Flask
 
-![YouTube Downloader](Screenshot (151).png)
+![YouTube Downloader](Screenshot%20(151).png)
 
 ## Overview
 
