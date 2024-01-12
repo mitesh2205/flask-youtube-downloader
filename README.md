@@ -1,5 +1,7 @@
 # YouTube Downloader using Python and Flask
 
+![YouTube Downloader](images/ytd_image)
+
 ## Overview
 
 This project is a simple YouTube downloader built with Python and Flask. It allows users to download YouTube videos in various formats directly to their local machine.
@@ -23,8 +25,8 @@ Make sure you have the following installed before running the application:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/mitesh2205/flask-youtube-downloader.git
-    cd flask-youtube-downloader/ytd
+    git clone https://github.com/your-username/youtube-downloader.git
+    cd youtube-downloader
     ```
 
 2. Install dependencies:
